@@ -12,7 +12,7 @@ unlink("acitivity.zip")
 
 ```r
 daytotal<- tapply(data$steps,data$date,sum,na.rm=TRUE)
-hist(daytotal, main = "Total Number of Steps taken per day", xlab= "", col="lightgreen")
+hist(daytotal, main = "Total Number of Steps taken per day", xlab= "", col="lightblue")
 ```
 
 ![](./PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
@@ -66,7 +66,7 @@ date<-data$date
 interval<-data$interval
 newdata<-data.frame(newsteps,date,interval)
 newdaytotal<- tapply(newsteps,date,sum)
-hist(newdaytotal, main = "New Total Number of Steps taken per day", xlab= "", col="pink")
+hist(newdaytotal, main = "New Total Number of Steps taken per day", xlab= "", col="pink2")
 ```
 
 ![](./PA1_template_files/figure-html/unnamed-chunk-5-1.png) 

@@ -16,7 +16,7 @@ unlink("acitivity.zip")
  
 ```{r}
 daytotal<- tapply(data$steps,data$date,sum,na.rm=TRUE)
-hist(daytotal, main = "Total Number of Steps taken per day", xlab= "", col="lightgreen")
+hist(daytotal, main = "Total Number of Steps taken per day", xlab= "", col="lightblue")
 meansteps<-format(round(mean(daytotal),0),scientific = FALSE)
 mediansteps<-format(round(median(daytotal),0),scientific = FALSE)
 ```
@@ -57,7 +57,7 @@ date<-data$date
 interval<-data$interval
 newdata<-data.frame(newsteps,date,interval)
 newdaytotal<- tapply(newsteps,date,sum)
-hist(newdaytotal, main = "New Total Number of Steps taken per day", xlab= "", col="pink")
+hist(newdaytotal, main = "New Total Number of Steps taken per day", xlab= "", col="pink2")
 newmean<-format(round(mean(newdaytotal),0),scientific = FALSE)
 newmedian<-format(round(median(newdaytotal),0),scientific = FALSE)
 
